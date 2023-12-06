@@ -35,7 +35,7 @@ namespace Character_Creator
             name = l_name[r.Next(5)];
             if (name == Settings.Default.name)
             {
-                name = l_name[r.Next(4)];
+                name = l_name[r.Next(5)];
             }
             Settings.Default.name = name;
         }
