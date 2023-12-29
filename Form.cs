@@ -12,8 +12,8 @@ namespace Character_Creator
 
         public void default_values()
         {
+            name_box.Text = Settings.Default.name;
             theme_select.SelectedIndex = 0;
-            alignment_select.SelectedIndex = 0;
             gender_select.SelectedIndex = 0;
         }
 
@@ -24,8 +24,10 @@ namespace Character_Creator
 
         private void name_button_Click(object sender, EventArgs e)
         {
-            Program.name_generator();
+            Program.name_generator(theme_select.SelectedIndex, gender_select.SelectedIndex, leader_checkbox.Checked);
             name_box.Text = Settings.Default.name;
         }
+
+
     }
 }
