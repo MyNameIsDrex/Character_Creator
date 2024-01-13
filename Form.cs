@@ -28,6 +28,9 @@ namespace Character_Creator
             name_box.Text = Settings.Default.name;
         }
 
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
 
+        }
     }
 }
